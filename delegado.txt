@@ -1,0 +1,14 @@
+private void EscribirTExtbox (string recibido)
+
+{
+// escribir textBox con invoke
+
+}
+
+Action<string> delegEscribir = EscribirTextbox;
+
+
+----> Enviar a ServidorHHTTP(Action<struing> delegEsc) delegEscribir
+
+
+----> El recibir texto en el servidor [método Receive()], llamar a delegEscribir(recfibido)

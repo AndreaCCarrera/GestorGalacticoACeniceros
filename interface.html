@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Galáctica</title>
+</head>
+<body>
+    <h1>Lista de Elementos Galácticos</h1>
+    <ul id="lista-objetos">
+        <!-- Aquí se listarán los elementos galácticos -->
+    </ul>
+
+    <button onclick="anadirElemento()">Añadir Elemento</button>
+    <button onclick="modificarElemento()">Modificar Elemento</button>
+    <button onclick="eliminarElemento()">Eliminar Elemento</button>
+    <button onclick="verDetallesElemento()">Ver Detalles del Elemento</button>
+    <button onclick="filtrarPorFecha()">Filtrar por Fecha</button>
+    <button onclick="filtrarPorAtmosfera()">Filtrar por Atmósfera</button>
+
+    <script>
+        // Realizar una solicitud GET al servidor para obtener la lista de objetos galácticos
+        fetch('/listarElementos')
+            .then(response => response.json())
+            .then(data => {
+                // Manipular el DOM para mostrar la lista de objetos galácticos
+                const listaObjetos = document.getElementById('lista-objetos');
+                listaObjetos.innerHTML = '';
+                data.forEach(objeto => {
+                    const li = document.createElement('li');
+                    li.textContent = objeto.nombre; // Suponiendo que cada objeto tiene una propiedad 'nombre'
+                    listaObjetos.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error al obtener la lista de objetos galácticos:', error));
+
+        function anadirElemento() {
+            
+        }
+
+        function modificarElemento() {
+            
+        }
+
+        function eliminarElemento() {
+            
+        }
+
+        function verDetallesElemento() {
+            
+        }
+
+        function filtrarPorFecha() {
+           
+        }
+
+        function filtrarPorAtmosfera() {
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+https://es.wikipedia.org/wiki/Júpiter_(planeta)
+https://es.wikipedia.org/wiki/Neptuno_(planeta)
+https://es.wikipedia.org/wiki/Marte_(planeta)
+https://es.wikipedia.org/wiki/Tierra (solo para probar lo de vida, otros datos también le faltan)
+
+
+Nombre (título de la tabla)
+Descubrimiento Try parse y si no se puede = datetimenow
+Tipo (categoría)
+Distancia estelar(dato max 999999)
+If Características Atmosféricas -> atmósfera true
+If agua -> agua true
+If nombre != Tierra -> vida false
